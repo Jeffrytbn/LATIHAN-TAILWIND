@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Web Developer - [Nama Anda]</title>
+
+    <!-- Tailwind 4 -->
+    <script src="tailwind.js"></script>
+
+    <!-- Font Awesome untuk ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <!-- Hero Section -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4 grid md:grid-cols-2 items-center gap-12">
+    <!-- Text -->
+    <div>
+      <h1 class="text-4xl font-bold mb-4 text-blue-700 leading-tight">
+        Jasa Web Developer Profesional
+      </h1>
+      <p class="text-lg text-gray-700 mb-6">
+        Halo, saya <span class="font-semibold text-blue-600">Jeffry Tambunan</span>, 
+        seorang Web Developer berpengalaman yang siap membantu Anda membangun 
+        website modern, responsif, dan sesuai kebutuhan bisnis Anda.
+      </p>
+      <a
+        href="#contact"
+        class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+      >
+        Hubungi Saya
+      </a>
+    </div>
+    <!-- Foto -->
+    <div class="flex justify-center md:justify">
+      <img
+        src="img/foto delcom.jpg"
+        alt="Foto Profil"
+        class="w-56 h-56 rounded-full shadow-lg object-cover"
+      />
+    </div>
+  </div>
+</section>
+
+
+    <!-- Layanan Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Layanan Saya</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-blue-100 text-blue-600">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Pembuatan Website</h3>
+            <p class="text-gray-600">
+              Membangun website dari awal sesuai kebutuhan Anda, baik personal,
+              bisnis, maupun portfolio.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-blue-100 text-blue-600">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Desain Responsif</h3>
+            <p class="text-gray-600">
+              Website yang optimal di semua perangkat, mulai dari desktop hingga
+              smartphone.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 bg-blue-100 text-blue-600">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Maintenance & Update</h3>
+            <p class="text-gray-600">
+              Layanan perawatan dan pembaruan website agar selalu aman dan
+              up-to-date.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Tentang Saya</h2>
+        <div class="max-w-2xl mx-auto text-center text-gray-700">
+          <p>
+            Saya telah berpengalaman lebih dari 3 tahun di bidang pengembangan web,
+            menguasai HTML, CSS, JavaScript, dan framework modern seperti React &
+            Tailwind. Saya siap membantu Anda mewujudkan website impian dengan hasil
+            profesional dan harga terjangkau.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Kontak Saya</h2>
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
+          <form>
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2" for="nama">Nama</label>
+              <input
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200"
+                type="text"
+                id="nama"
+                name="nama"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2" for="email">Email</label>
+              <input
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2" for="pesan">Pesan</label>
+              <textarea
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200"
+                id="pesan"
+                name="pesan"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+          <div class="mt-6 text-center text-gray-600">
+            <p>
+              <i class="fas fa-envelope mr-2"></i> Email:
+              <span class="font-semibold">Jeffrytbn1206@gmail.com</span>
+            </p>
+            <p>
+              <i class="fas fa-phone mr-2"></i> WhatsApp:
+              <span class="font-semibold">081317115509</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
